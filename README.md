@@ -1,4 +1,6 @@
-🏥 Gestor de Farmacia - Razor Pages
+#🏥 Gestor de Farmacia - Razor Pages 
+
+-----------------------------------------------------------------
 📌 Descripción del Proyecto
 
 Sistema web desarrollado en ASP.NET Core Razor Pages + C# que permite gestionar la información de una farmacia mediante operaciones CRUD completas.
