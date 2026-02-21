@@ -1,4 +1,4 @@
-#🏥 Gestor de Farmacia - Razor Pages 
+# 🏥 Gestor de Farmacia - Razor Pages 
 
 -----------------------------------------------------------------
 📌 Descripción del Proyecto
