@@ -1,28 +1,28 @@
 # 🏥 Gestor de Farmacia - Razor Pages 
 
 -----------------------------------------------------------------
-📌 Descripción del Proyecto
+## 📌 Descripción del Proyecto
 
 Sistema web desarrollado en ASP.NET Core Razor Pages + C# que permite gestionar la información de una farmacia mediante operaciones CRUD completas.
 
 El proyecto aplica principios SOLID y Clean Code, asegurando una arquitectura limpia, mantenible y escalable.
 
 -----------------------------------------------------------------
-🚀 Tecnologías Utilizadas
+## 🚀 Tecnologías Utilizadas
 
-ASP.NET Core Razor Pages
+- ASP.NET Core Razor Pages
 
-C#
+- C#
 
-Entity Framework Core
+- Entity Framework Core
 
-SQL Server
+- SQL Server
 
-Git / GitHub
+- Git / GitHub
 
 -----------------------------------------------------------------
 
-🧱 Principios Aplicados
+## 🧱 Principios Aplicados
 
 Se aplicaron los siguientes principios:
 
