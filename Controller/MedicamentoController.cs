@@ -16,6 +16,13 @@ namespace ProyectoArqSoft.Controller
             _service = service;
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var lista = await _service.ListarAsync();
+            return Ok(lista);
+        }
+
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateMedicamentoDto dto)
         {

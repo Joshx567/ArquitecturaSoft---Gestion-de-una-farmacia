@@ -1,5 +1,6 @@
 using ProyectoArqSoft.Modelos;
 using ProyectoArqSoft.Repository;
+using ProyectoArqSoft.Models.Dto;
 
 namespace ProyectoArqSoft.Service; 
 public class MedicamentoService: IMedicamentoService
@@ -25,6 +26,20 @@ public class MedicamentoService: IMedicamentoService
             throw new ArgumentException("El stock mínimo no puede ser negativo.");
 
         return await _repo.CrearAsync(medicamento);
+    }
+
+    public async Task<List<ListMedicamentoDto>> ListarAsync()
+    {
+        var lista = await _repo.ListarAsync();
+
+        return lista.Select(m => new ListMedicamentoDto
+        {
+            id_medicamento = m.id_medicamento,
+            nombre = m.nombre,
+            presentacion = m.presentacion,
+            clasificacion = m.clasificacion,
+            stock_minimo = m.stock_minimo
+        }).ToList();
     }
 
 }
