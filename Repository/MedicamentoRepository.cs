@@ -33,5 +33,36 @@ namespace ProyectoArqSoft.Repository
             var newId = await cmd.ExecuteScalarAsync();
             return Convert.ToInt32(newId); 
         }
+
+        public async Task<List<Medicamento>> ListarAsync()
+        {
+            var lista = new List<Medicamento>();
+
+            const string sql = @"
+                SELECT id_medicamento, nombre, presentacion, clasificacion, stock_minimo
+                FROM medicamento
+                ORDER BY id_medicamento DESC;";
+
+            await using var conn = _db.CreateConnection();
+            await conn.OpenAsync();
+
+            await using var cmd = new NpgsqlCommand(sql, conn);
+            await using var reader = await cmd.ExecuteReaderAsync();
+
+            while (await reader.ReadAsync())
+            {
+                lista.Add(new Medicamento
+                {
+                    id_medicamento = reader.GetInt32(0),
+                    nombre = reader.GetString(1),
+                    presentacion = reader.GetString(2),
+                    clasificacion = reader.GetString(3),
+                    stock_minimo = reader.GetInt32(4)
+                });
+            }
+
+            return lista;
+        }
+
     }
 }
