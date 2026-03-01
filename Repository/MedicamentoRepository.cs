@@ -64,5 +64,32 @@ namespace ProyectoArqSoft.Repository
             return lista;
         }
 
+        public async Task<bool> ActualizarAsync(Medicamento medicamento)
+        {
+            const string sql = @"
+                UPDATE medicamento
+                SET nombre = @nombre,
+                    presentacion = @presentacion,
+                    clasificacion = @clasificacion,
+                    concentracion = @concentracion,
+                    stock_minimo = @stock_minimo
+                WHERE id_medicamento = @id
+            ";
+
+            await using var conn = _db.CreateConnection(); // o CreateConnection()
+            await conn.OpenAsync();
+
+            await using var cmd = new NpgsqlCommand(sql, conn);
+
+            cmd.Parameters.AddWithValue("@id", medicamento.id_medicamento);
+            cmd.Parameters.AddWithValue("@nombre", medicamento.nombre);
+            cmd.Parameters.AddWithValue("@presentacion", medicamento.presentacion);
+            cmd.Parameters.AddWithValue("@clasificacion", medicamento.clasificacion);
+            cmd.Parameters.AddWithValue("@concentracion", medicamento.concentracion); // quita si no existe
+            cmd.Parameters.AddWithValue("@stock_minimo", medicamento.stock_minimo);
+
+            var rows = await cmd.ExecuteNonQueryAsync();
+            return rows > 0; // true si se actualizó algo
+        }
     }
 }
