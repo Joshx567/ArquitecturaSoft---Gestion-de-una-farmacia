@@ -58,11 +58,71 @@ namespace ProyectoArqSoft.Controller
             try
             {
                 var clientes = await _clienteService.GetAllClientesAsync();
-
-                if (clientes == null || clientes.Count == 0)
-                    return NotFound(new { message = "No se encontraron clientes" });
-
                 return Ok(clientes);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = ex.Message });
+            }
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            try
+            {
+                var cliente = await _clienteService.GetClienteByIdAsync(id);
+
+                if (cliente == null)
+                    return NotFound(new { message = "Cliente no encontrado" });
+
+                return Ok(cliente);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = ex.Message });
+            }
+        }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, [FromBody] UpdateClienteDto dto)
+        {
+            // Validar que el ID de la ruta coincida con el del DTO
+            if (id != dto.id_cliente)
+            {
+                return BadRequest(new { message = "El ID de la ruta no coincide con el ID del cliente" });
+            }
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            try
+            {
+                var cliente = new Cliente
+                {
+                    id_cliente = dto.id_cliente,
+                    tipo_cliente = dto.tipo_cliente,
+                    nombre = dto.nombre,
+                    ci = dto.ci,
+                    edad = dto.edad,
+                    sexo = dto.sexo,
+                    telefono = dto.telefono
+                };
+
+                var resultado = await _clienteService.UpdateClienteAsync(cliente);
+
+                if (resultado.success)
+                {
+                    return Ok(new { message = resultado.message });
+                }
+                else
+                {
+                    return BadRequest(new { message = resultado.message });
+                }
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { message = ex.Message });
             }
             catch (Exception ex)
             {
@@ -76,10 +136,6 @@ namespace ProyectoArqSoft.Controller
             try
             {
                 var clientes = await _clienteService.SearchClientesAsync(texto);
-
-                if (clientes == null || clientes.Count == 0)
-                    return NotFound(new { message = "No se encontraron clientes" });
-
                 return Ok(clientes);
             }
             catch (ArgumentException ex)

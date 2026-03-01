@@ -1,6 +1,7 @@
 using Npgsql;
 using ProyectoArqSoft.Data;
 using ProyectoArqSoft.Modelos;
+using System.Data;
 
 namespace ProyectoArqSoft.Repository
 {
@@ -15,7 +16,7 @@ namespace ProyectoArqSoft.Repository
 
         public async Task<int> CreateClienteAsync(Cliente cliente)
         {
-            using var connection = _dbConnectionFactory.CreateConnection();
+            using var connection = (NpgsqlConnection)_dbConnectionFactory.CreateConnection();
             await connection.OpenAsync();
 
             var query = @"
@@ -39,7 +40,7 @@ namespace ProyectoArqSoft.Repository
         {
             var clientes = new List<Cliente>();
 
-            using var connection = _dbConnectionFactory.CreateConnection();
+            using var connection = (NpgsqlConnection)_dbConnectionFactory.CreateConnection();
             await connection.OpenAsync();
 
             var query = @"
@@ -71,7 +72,7 @@ namespace ProyectoArqSoft.Repository
         {
             var clientes = new List<Cliente>();
 
-            using var connection = _dbConnectionFactory.CreateConnection();
+            using var connection = (NpgsqlConnection)_dbConnectionFactory.CreateConnection();
             await connection.OpenAsync();
 
             var query = @"
@@ -102,6 +103,93 @@ namespace ProyectoArqSoft.Repository
             }
 
             return clientes;
+        }
+
+        public async Task<Cliente?> GetClienteByIdAsync(int id)
+        {
+            using var connection = (NpgsqlConnection)_dbConnectionFactory.CreateConnection();
+            await connection.OpenAsync();
+
+            var query = @"
+                SELECT id_cliente, tipo_cliente, nombre, ci, edad, sexo, telefono
+                FROM cliente
+                WHERE id_cliente = @id;";
+
+            using var cmd = new NpgsqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@id", id);
+
+            using var reader = await cmd.ExecuteReaderAsync();
+
+            if (await reader.ReadAsync())
+            {
+                return new Cliente
+                {
+                    id_cliente = reader.GetInt32(0),
+                    tipo_cliente = reader.GetString(1),
+                    nombre = reader.GetString(2),
+                    ci = reader.GetString(3),
+                    edad = reader.IsDBNull(4) ? null : reader.GetInt32(4),
+                    sexo = reader.IsDBNull(5) ? string.Empty : reader.GetString(5),
+                    telefono = reader.IsDBNull(6) ? string.Empty : reader.GetString(6)
+                };
+            }
+
+            return null;
+        }
+
+        public async Task<bool> UpdateClienteAsync(Cliente cliente)
+        {
+            using var connection = (NpgsqlConnection)_dbConnectionFactory.CreateConnection();
+            await connection.OpenAsync();
+
+            var query = @"
+                UPDATE cliente 
+                SET tipo_cliente = @tipo_cliente,
+                    nombre = @nombre,
+                    ci = @ci,
+                    edad = @edad,
+                    sexo = @sexo,
+                    telefono = @telefono
+                WHERE id_cliente = @id_cliente;";
+
+            using var cmd = new NpgsqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@id_cliente", cliente.id_cliente);
+            cmd.Parameters.AddWithValue("@tipo_cliente", cliente.tipo_cliente);
+            cmd.Parameters.AddWithValue("@nombre", cliente.nombre);
+            cmd.Parameters.AddWithValue("@ci", cliente.ci);
+            cmd.Parameters.AddWithValue("@edad", (object?)cliente.edad ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@sexo", (object?)cliente.sexo ?? DBNull.Value);
+            cmd.Parameters.AddWithValue("@telefono", (object?)cliente.telefono ?? DBNull.Value);
+
+            var rowsAffected = await cmd.ExecuteNonQueryAsync();
+            return rowsAffected > 0;
+        }
+
+        public async Task<bool> ExisteCiAsync(string ci, int? idClienteExcluir = null)
+        {
+            using var connection = (NpgsqlConnection)_dbConnectionFactory.CreateConnection();
+            await connection.OpenAsync();
+
+            var query = @"
+                SELECT COUNT(1) 
+                FROM cliente 
+                WHERE ci = @ci";
+
+            if (idClienteExcluir.HasValue)
+            {
+                query += " AND id_cliente != @idClienteExcluir";
+            }
+
+            using var cmd = new NpgsqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@ci", ci);
+
+            if (idClienteExcluir.HasValue)
+            {
+                cmd.Parameters.AddWithValue("@idClienteExcluir", idClienteExcluir.Value);
+            }
+
+            var count = (long)await cmd.ExecuteScalarAsync();
+            return count > 0;
         }
     }
 }

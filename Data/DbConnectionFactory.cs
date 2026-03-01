@@ -1,5 +1,5 @@
-using Microsoft.Extensions.Configuration;
 using Npgsql;
+using System.Data;
 
 namespace ProyectoArqSoft.Data
 {
@@ -9,11 +9,16 @@ namespace ProyectoArqSoft.Data
 
         public DbConnectionFactory(IConfiguration configuration)
         {
-            _connectionString = configuration.GetConnectionString("PostgresConnection")
-                ?? throw new InvalidOperationException("Connection string 'PostgresConnection' not found.");
+            // Leer la cadena de conexión desde appsettings.json
+            _connectionString = configuration.GetConnectionString("DefaultConnection");
+
+            if (string.IsNullOrEmpty(_connectionString))
+            {
+                throw new InvalidOperationException("La cadena de conexión 'DefaultConnection' no está configurada.");
+            }
         }
 
-        public NpgsqlConnection CreateConnection()
+        public IDbConnection CreateConnection()
         {
             return new NpgsqlConnection(_connectionString);
         }
