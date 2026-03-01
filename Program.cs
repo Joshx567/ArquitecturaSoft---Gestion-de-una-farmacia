@@ -2,10 +2,12 @@ using ProyectoArqSoft.Data;
 using ProyectoArqSoft.Repository;
 using ProyectoArqSoft.Service;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
 
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession();
@@ -15,6 +17,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<DbConnectionFactory>();
 builder.Services.AddScoped<IMedicamentoRepository, MedicamentoRepository>();
 builder.Services.AddScoped<IMedicamentoService, MedicamentoService>();
+builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
+builder.Services.AddScoped<IClienteService, ClienteService>();
 
 var app = builder.Build();
 
