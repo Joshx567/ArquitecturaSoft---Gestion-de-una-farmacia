@@ -191,5 +191,21 @@ namespace ProyectoArqSoft.Repository
             var count = (long)await cmd.ExecuteScalarAsync();
             return count > 0;
         }
+
+        public async Task<bool> DeleteClienteAsync(int id)
+        {
+            using var connection = (NpgsqlConnection)_dbConnectionFactory.CreateConnection();
+            await connection.OpenAsync();
+
+            var query = @"
+                         DELETE FROM cliente 
+                         WHERE id_cliente = @id_cliente;";
+
+            using var cmd = new NpgsqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@id_cliente", id);
+
+            var rowsAffected = await cmd.ExecuteNonQueryAsync();
+            return rowsAffected > 0;
+        }
     }
 }

@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|c:\\users\\asus\\documents\\arquitecturasoft---gestion-de-una-farmacia\\service\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|solutionrelative:service\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|c:\\users\\asus\\documents\\arquitecturasoft---gestion-de-una-farmacia\\service\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|solutionrelative:service\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|c:\\users\\asus\\documents\\arquitecturasoft---gestion-de-una-farmacia\\repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|solutionrelative:repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|c:\\users\\asus\\documents\\arquitecturasoft---gestion-de-una-farmacia\\repository\\iclienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|solutionrelative:repository\\iclienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|c:\\users\\asus\\documents\\arquitecturasoft---gestion-de-una-farmacia\\model\\cliente\\dto\\createclientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|solutionrelative:model\\cliente\\dto\\createclientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|c:\\users\\asus\\documents\\arquitecturasoft---gestion-de-una-farmacia\\model\\cliente\\dto\\updateclientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|solutionrelative:model\\cliente\\dto\\updateclientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|c:\\users\\asus\\documents\\arquitecturasoft---gestion-de-una-farmacia\\controller\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|solutionrelative:controller\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|c:\\users\\asus\\documents\\arquitecturasoft---gestion-de-una-farmacia\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -34,22 +62,6 @@
       "RelativeMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|solutionrelative:repository\\imedicamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|c:\\users\\asus\\documents\\arquitecturasoft---gestion-de-una-farmacia\\repository\\iclienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|solutionrelative:repository\\iclienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|c:\\users\\asus\\documents\\arquitecturasoft---gestion-de-una-farmacia\\repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|solutionrelative:repository\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|c:\\users\\asus\\documents\\arquitecturasoft---gestion-de-una-farmacia\\model\\cliente\\dto\\updateclientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|solutionrelative:model\\cliente\\dto\\updateclientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|c:\\users\\asus\\documents\\arquitecturasoft---gestion-de-una-farmacia\\model\\cliente\\dto\\createclientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|solutionrelative:model\\cliente\\dto\\createclientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|c:\\users\\asus\\documents\\arquitecturasoft---gestion-de-una-farmacia\\data\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|solutionrelative:data\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -60,14 +72,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|c:\\users\\asus\\documents\\arquitecturasoft---gestion-de-una-farmacia\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|c:\\users\\asus\\documents\\arquitecturasoft---gestion-de-una-farmacia\\service\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|solutionrelative:service\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|c:\\users\\asus\\documents\\arquitecturasoft---gestion-de-una-farmacia\\service\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|solutionrelative:service\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|c:\\users\\asus\\documents\\arquitecturasoft---gestion-de-una-farmacia\\service\\imedicamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -84,10 +88,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|c:\\users\\asus\\documents\\arquitecturasoft---gestion-de-una-farmacia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|c:\\users\\asus\\documents\\arquitecturasoft---gestion-de-una-farmacia\\controller\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9615C0A3-A98D-49F8-A6A3-F7D20020D89E}|ProyectoArqSoft.csproj|solutionrelative:controller\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -97,7 +97,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -105,68 +105,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-01T17:39:04.897Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Microsoft.Common.CurrentVersion.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AgIAAPoUAAAAAAAAAAAwwBEVAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2026-03-01T17:37:51.605Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Medicamento.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Model\\Medicamento\\Medicamento.cs",
-              "RelativeDocumentMoniker": "Model\\Medicamento\\Medicamento.cs",
-              "ToolTip": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Model\\Medicamento\\Medicamento.cs",
-              "RelativeToolTip": "Model\\Medicamento\\Medicamento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T17:37:16.646Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UpdateClienteDto.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Model\\Cliente\\Dto\\UpdateClienteDto.cs",
-              "RelativeDocumentMoniker": "Model\\Cliente\\Dto\\UpdateClienteDto.cs",
-              "ToolTip": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Model\\Cliente\\Dto\\UpdateClienteDto.cs",
-              "RelativeToolTip": "Model\\Cliente\\Dto\\UpdateClienteDto.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAswCAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T16:37:02.308Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "ClienteRepository.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Repository\\ClienteRepository.cs",
               "RelativeDocumentMoniker": "Repository\\ClienteRepository.cs",
               "ToolTip": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Repository\\ClienteRepository.cs",
               "RelativeToolTip": "Repository\\ClienteRepository.cs",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAmwL4AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAALwAAAAAAAAAAAAUwMAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T16:22:33.497Z"
+              "WhenOpened": "2026-03-01T16:22:33.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IClienteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Repository\\IClienteRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\IClienteRepository.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Repository\\IClienteRepository.cs",
+              "RelativeToolTip": "Repository\\IClienteRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T16:22:24.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IClienteService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Service\\IClienteService.cs",
+              "RelativeDocumentMoniker": "Service\\IClienteService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Service\\IClienteService.cs",
+              "RelativeToolTip": "Service\\IClienteService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T16:25:33.338Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ClienteService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Service\\ClienteService.cs",
+              "RelativeDocumentMoniker": "Service\\ClienteService.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Service\\ClienteService.cs*",
+              "RelativeToolTip": "Service\\ClienteService.cs*",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAUwG0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T16:26:24.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Controller\\ClienteController.cs",
+              "RelativeDocumentMoniker": "Controller\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Controller\\ClienteController.cs",
+              "RelativeToolTip": "Controller\\ClienteController.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAswKoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T16:18:59.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UpdateClienteDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Model\\Cliente\\Dto\\UpdateClienteDto.cs",
+              "RelativeDocumentMoniker": "Model\\Cliente\\Dto\\UpdateClienteDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Model\\Cliente\\Dto\\UpdateClienteDto.cs",
+              "RelativeToolTip": "Model\\Cliente\\Dto\\UpdateClienteDto.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA5wCAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T16:37:02.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CreateClienteDto.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Model\\Cliente\\Dto\\CreateClienteDto.cs",
+              "RelativeDocumentMoniker": "Model\\Cliente\\Dto\\CreateClienteDto.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Model\\Cliente\\Dto\\CreateClienteDto.cs",
+              "RelativeToolTip": "Model\\Cliente\\Dto\\CreateClienteDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T16:36:10.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -179,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "ProyectoArqSoft",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\ProyectoArqSoft.csproj",
               "RelativeDocumentMoniker": "ProyectoArqSoft.csproj",
@@ -190,19 +220,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IClienteRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Repository\\IClienteRepository.cs",
-              "RelativeDocumentMoniker": "Repository\\IClienteRepository.cs",
-              "ToolTip": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Repository\\IClienteRepository.cs",
-              "RelativeToolTip": "Repository\\IClienteRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA+AAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Medicamento.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Model\\Medicamento\\Medicamento.cs",
+              "RelativeDocumentMoniker": "Model\\Medicamento\\Medicamento.cs",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Model\\Medicamento\\Medicamento.cs",
+              "RelativeToolTip": "Model\\Medicamento\\Medicamento.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T16:22:24.93Z"
+              "WhenOpened": "2026-03-01T17:37:16.646Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAPoUAAAAAAAAAAAwwBEVAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-03-01T17:37:51.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-01T17:39:04.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "IMedicamentoRepository.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Repository\\IMedicamentoRepository.cs",
               "RelativeDocumentMoniker": "Repository\\IMedicamentoRepository.cs",
@@ -214,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "MedicamentoRepository.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Repository\\MedicamentoRepository.cs",
               "RelativeDocumentMoniker": "Repository\\MedicamentoRepository.cs",
@@ -226,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Model\\Cliente\\Cliente.cs",
               "RelativeDocumentMoniker": "Model\\Cliente\\Cliente.cs",
@@ -238,19 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CreateClienteDto.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Model\\Cliente\\Dto\\CreateClienteDto.cs",
-              "RelativeDocumentMoniker": "Model\\Cliente\\Dto\\CreateClienteDto.cs",
-              "ToolTip": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Model\\Cliente\\Dto\\CreateClienteDto.cs",
-              "RelativeToolTip": "Model\\Cliente\\Dto\\CreateClienteDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T16:36:10.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "DbConnectionFactory.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Data\\DbConnectionFactory.cs",
               "RelativeDocumentMoniker": "Data\\DbConnectionFactory.cs",
@@ -262,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "MedicamentoController.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Controller\\MedicamentoController.cs",
               "RelativeDocumentMoniker": "Controller\\MedicamentoController.cs",
@@ -274,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Pages\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
@@ -286,19 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IClienteService.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Service\\IClienteService.cs",
-              "RelativeDocumentMoniker": "Service\\IClienteService.cs",
-              "ToolTip": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Service\\IClienteService.cs",
-              "RelativeToolTip": "Service\\IClienteService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T16:25:33.338Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "IMedicamentoService.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Service\\IMedicamentoService.cs",
               "RelativeDocumentMoniker": "Service\\IMedicamentoService.cs",
@@ -310,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "MedicamentoService.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Service\\MedicamentoService.cs",
               "RelativeDocumentMoniker": "Service\\MedicamentoService.cs",
@@ -322,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "package-lock.json",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\package-lock.json",
               "RelativeDocumentMoniker": "package-lock.json",
@@ -334,19 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ClienteService.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Service\\ClienteService.cs",
-              "RelativeDocumentMoniker": "Service\\ClienteService.cs",
-              "ToolTip": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Service\\ClienteService.cs",
-              "RelativeToolTip": "Service\\ClienteService.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAowG0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T16:26:24.382Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -355,18 +373,6 @@
               "ViewState": "AgIAAAgAAAAAAAAAAAAUwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-01T16:56:36.534Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Controller\\ClienteController.cs",
-              "RelativeDocumentMoniker": "Controller\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\Asus\\Documents\\ArquitecturaSoft---Gestion-de-una-farmacia\\Controller\\ClienteController.cs",
-              "RelativeToolTip": "Controller\\ClienteController.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAA7wFgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-01T16:18:59.759Z"
             }
           ]
         }

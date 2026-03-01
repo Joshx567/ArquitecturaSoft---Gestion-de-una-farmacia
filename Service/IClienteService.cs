@@ -11,5 +11,6 @@ namespace ProyectoArqSoft.Service
         Task<(bool success, string message)> UpdateClienteAsync(Cliente cliente);
         bool ValidarEmail(string email);
         bool ValidarTelefono(string telefono);
+        Task<(bool success, string message)> DeleteClienteAsync(int id);
     }
 }

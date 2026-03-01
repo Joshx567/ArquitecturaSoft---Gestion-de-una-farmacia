@@ -10,5 +10,6 @@ namespace ProyectoArqSoft.Repository
         Task<Cliente?> GetClienteByIdAsync(int id);
         Task<bool> UpdateClienteAsync(Cliente cliente);
         Task<bool> ExisteCiAsync(string ci, int? idClienteExcluir = null);
+        Task<bool> DeleteClienteAsync(int id);
     }
 }

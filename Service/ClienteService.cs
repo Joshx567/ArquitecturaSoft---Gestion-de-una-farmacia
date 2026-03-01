@@ -15,11 +15,9 @@ namespace ProyectoArqSoft.Service
 
         public async Task<int> CreateClienteAsync(Cliente cliente)
         {
-            // Validar formato de teléfono
             if (!ValidarTelefono(cliente.telefono))
                 throw new ArgumentException("El formato del teléfono no es válido. Debe tener 7-8 dígitos");
 
-            // Validar que el CI no exista
             if (await _clienteRepository.ExisteCiAsync(cliente.ci))
                 throw new ArgumentException("Ya existe un cliente con ese CI");
 
@@ -48,52 +46,49 @@ namespace ProyectoArqSoft.Service
         {
             try
             {
-                // Validar que el cliente existe
                 var clienteExistente = await _clienteRepository.GetClienteByIdAsync(cliente.id_cliente);
                 if (clienteExistente == null)
-                {
                     return (false, "Cliente no encontrado");
-                }
 
-                // Validar formato de teléfono
                 if (!ValidarTelefono(cliente.telefono))
-                {
                     return (false, "El formato del teléfono no es válido. Debe tener 7-8 dígitos");
-                }
 
-                // Validar edad si está presente
                 if (cliente.edad.HasValue && (cliente.edad < 0 || cliente.edad > 120))
-                {
                     return (false, "La edad debe estar entre 0 y 120 años");
-                }
 
-                // Validar sexo si está presente
                 if (!string.IsNullOrEmpty(cliente.sexo) && cliente.sexo != "M" && cliente.sexo != "F")
-                {
                     return (false, "El sexo debe ser M o F");
-                }
 
-                // Validar que el CI no exista en otro cliente
                 if (await _clienteRepository.ExisteCiAsync(cliente.ci, cliente.id_cliente))
-                {
                     return (false, "Ya existe un cliente con ese CI");
-                }
 
-                // Actualizar cliente
                 var actualizado = await _clienteRepository.UpdateClienteAsync(cliente);
-
-                if (actualizado)
-                {
-                    return (true, "Cliente actualizado exitosamente");
-                }
-                else
-                {
-                    return (false, "No se pudo actualizar el cliente");
-                }
+                return actualizado
+                    ? (true, "Cliente actualizado exitosamente")
+                    : (false, "No se pudo actualizar el cliente");
             }
             catch (Exception ex)
             {
                 return (false, $"Error al actualizar: {ex.Message}");
+            }
+        }
+
+        public async Task<(bool success, string message)> DeleteClienteAsync(int id)
+        {
+            try
+            {
+                var clienteExistente = await _clienteRepository.GetClienteByIdAsync(id);
+                if (clienteExistente == null)
+                    return (false, "Cliente no encontrado");
+
+                var eliminado = await _clienteRepository.DeleteClienteAsync(id);
+                return eliminado
+                    ? (true, "Cliente eliminado exitosamente")
+                    : (false, "No se pudo eliminar el cliente");
+            }
+            catch (Exception ex)
+            {
+                return (false, $"Error al eliminar: {ex.Message}");
             }
         }
 
@@ -102,8 +97,6 @@ namespace ProyectoArqSoft.Service
             if (string.IsNullOrEmpty(telefono))
                 return false;
 
-            // Validar formato de teléfono boliviano
-            // Acepta: 12345678, 1234567, +59112345678, +591 12345678, 59112345678
             var regexTelefono = new Regex(@"^(\+?591)?[ -]?[0-9]{7,8}$");
             return regexTelefono.IsMatch(telefono.Trim());
         }
@@ -111,19 +104,18 @@ namespace ProyectoArqSoft.Service
         public bool ValidarEmail(string email)
         {
             if (string.IsNullOrEmpty(email))
-                return true; 
+                return true;
 
             try
             {
                 var addr = new System.Net.Mail.MailAddress(email);
-                return addr.Address == email;
+
+                return addr.Address == email && email.Contains('.');
             }
             catch
             {
                 return false;
             }
         }
-
     }
-
 }

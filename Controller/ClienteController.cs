@@ -147,5 +147,27 @@ namespace ProyectoArqSoft.Controller
                 return StatusCode(500, new { error = ex.Message });
             }
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            try
+            {
+                var resultado = await _clienteService.DeleteClienteAsync(id);
+
+                if (resultado.success)
+                {
+                    return Ok(new { message = resultado.message });
+                }
+                else
+                {
+                    return NotFound(new { message = resultado.message });
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = ex.Message });
+            }
+        }
     }
 }
