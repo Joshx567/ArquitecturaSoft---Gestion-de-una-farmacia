@@ -91,5 +91,21 @@ namespace ProyectoArqSoft.Repository
             var rows = await cmd.ExecuteNonQueryAsync();
             return rows > 0; // true si se actualizó algo
         }
+
+        public async Task<bool> DeleteAsync(int id)
+        {
+            const string sql = @"DELETE FROM medicamento 
+                                WHERE id_medicamento = @id;";
+
+            await using var conn = _db.CreateConnection();
+            await conn.OpenAsync();
+
+            await using var cmd = new NpgsqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("@id", id);
+
+            var filas = await cmd.ExecuteNonQueryAsync();
+
+            return filas > 0;
+        }
     }
 }
