@@ -42,5 +42,35 @@ public class MedicamentoService: IMedicamentoService
         }).ToList();
     }
 
+    public async Task<bool> ActualizarAsync(UpdateMedicamentoDto dto)
+    {
+        if (dto == null) throw new ArgumentNullException(nameof(dto));
+        if (dto.id_medicamento <= 0) throw new ArgumentException("ID inválido.");
+
+        if (string.IsNullOrWhiteSpace(dto.nombre))
+            throw new ArgumentException("El nombre es obligatorio.");
+
+        if (string.IsNullOrWhiteSpace(dto.presentacion))
+            throw new ArgumentException("La presentación es obligatoria.");
+
+        if (string.IsNullOrWhiteSpace(dto.clasificacion))
+            throw new ArgumentException("La clasificación es obligatoria.");
+
+        if (dto.stock_minimo < 0)
+            throw new ArgumentException("El stock mínimo no puede ser negativo.");
+
+        var medicamento = new Medicamento
+        {
+            id_medicamento = dto.id_medicamento,
+            nombre = dto.nombre,
+            presentacion = dto.presentacion,
+            clasificacion = dto.clasificacion,
+            concentracion = dto.concentracion, // quita si no existe
+            stock_minimo = dto.stock_minimo
+        };
+
+        return await _repo.ActualizarAsync(medicamento);
+    }
+
 }
     

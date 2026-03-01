@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using ProyectoArqSoft.Modelos;
 using ProyectoArqSoft.Modelos.Dto;
 using ProyectoArqSoft.Service;
+using ProyectoArqSoft.Models.Dto;
 
 namespace ProyectoArqSoft.Controller
 {
@@ -46,6 +47,29 @@ namespace ProyectoArqSoft.Controller
             catch (Exception ex)
             {
                 return StatusCode(500, new { error = ex.Message });
+            }
+        }
+
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Update(int id, [FromBody] UpdateMedicamentoDto dto)
+        {
+            if (dto == null) return BadRequest("Body vacío.");
+
+            // fuerza consistencia: el id de la URL manda
+            dto.id_medicamento = id;
+
+            try
+            {
+                var ok = await _service.ActualizarAsync(dto);
+
+                if (!ok)
+                    return NotFound(new { message = "No existe el medicamento con ese ID." });
+
+                return Ok(new { message = "Actualizado", id });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
             }
         }
     }
