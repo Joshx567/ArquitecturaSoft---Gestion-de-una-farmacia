@@ -45,5 +45,26 @@ public async Task<IActionResult> Buscar([FromQuery] string? q)
         return StatusCode(500, $"Error interno: {ex.Message}");
     }
 }
+
+[HttpDelete("{id}")]
+public async Task<IActionResult> Eliminar(int id)
+{
+    try 
+    {
+        var eliminado = await _service.EliminarAsync(id);
+
+        if (!eliminado)
+        {
+            
+            return NotFound(new { mensaje = "Bioquímico no encontrado." });
+        }
+
+        return Ok(new { mensaje = "Bioquímico eliminado exitosamente." });
+    }
+    catch (Exception ex)
+    {
+        return StatusCode(500, $"Error interno: {ex.Message}");
+    }
+}
     }
 }

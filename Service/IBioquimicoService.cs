@@ -6,5 +6,6 @@ namespace ProyectoArqSoft.Service
     {
         
         Task<IEnumerable<Bioquimico>> BuscarAsync(string filtro);
+        Task<bool> EliminarAsync(int id);
     }
 }
