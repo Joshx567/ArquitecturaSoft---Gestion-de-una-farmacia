@@ -1,0 +1,42 @@
+@page
+@model ProyectoArqSoft.Pages.Bioquimicos.CreateModel
+@{
+    ViewData["Title"] = "Registrar Bioquímico";
+}
+
+<h2>Registrar Bioquímico</h2>
+
+@if (!string.IsNullOrEmpty(Model.MensajeError))
+{
+<div class="alert alert-danger">@Model.MensajeError</div>
+}
+
+<form method="post">
+    <div class="mb-3">
+        <label class="form-label">Nombres</label>
+        <input class="form-control" asp-for="Bioquimico.nombres" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Apellidos</label>
+        <input class="form-control" asp-for="Bioquimico.apellidos" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">CI</label>
+        <input class="form-control" asp-for="Bioquimico.ci" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Teléfono</label>
+        <input class="form-control" asp-for="Bioquimico.telefono" />
+    </div>
+
+    <div class="form-check mb-3">
+        <input class="form-check-input" asp-for="Bioquimico.activo" />
+        <label class="form-check-label">Activo</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a class="btn btn-secondary" asp-page="/Bioquimicos/Index">Volver</a>
+</form>

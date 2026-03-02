@@ -1,0 +1,33 @@
+@page
+@model ProyectoArqSoft.Pages.Bioquimicos.IndexModel
+@{
+    ViewData["Title"] = "Bioquímicos";
+}
+
+<h2>Bioquímicos</h2>
+
+<a class="btn btn-primary mb-3" asp-page="/Bioquimicos/Create">+ Registrar bioquímico</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Apellidos</th>
+            <th>Nombres</th>
+            <th>CI</th>
+            <th>Teléfono</th>
+            <th>Activo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var b in Model.Bioquimicos)
+    {
+        <tr>
+            <td>@b.apellidos</td>
+            <td>@b.nombres</td>
+            <td>@b.ci</td>
+            <td>@b.telefono</td>
+            <td>@(b.activo ? "Sí" : "No")</td>
+        </tr>
+    }
+    </tbody>
+</table>
