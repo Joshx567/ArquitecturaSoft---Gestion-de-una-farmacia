@@ -72,5 +72,13 @@ public class MedicamentoService: IMedicamentoService
         return await _repo.ActualizarAsync(medicamento);
     }
 
+    public async Task<bool> DeleteAsync(int id)
+    {
+        if (id <= 0)
+            throw new ArgumentException("Id inválido.");
+
+        return await _repo.DeleteAsync(id);
+    }
+
 }
     

@@ -7,5 +7,7 @@ public interface IMedicamentoService
     Task<int> CrearAsync(Medicamento medicamento);
     Task<List<ListMedicamentoDto>> ListarAsync();
     Task<bool> ActualizarAsync(UpdateMedicamentoDto dto);
+
+    Task<bool> DeleteAsync(int id);
     
 }

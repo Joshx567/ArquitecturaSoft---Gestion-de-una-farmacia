@@ -72,5 +72,23 @@ namespace ProyectoArqSoft.Controller
                 return BadRequest(new { error = ex.Message });
             }
         }
+
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> DeleteMedicamento(int id)
+        {
+            try
+            {
+                var eliminado = await _service.DeleteAsync(id);
+
+                if (!eliminado)
+                    return NotFound(new { message = "No existe el medicamento con ese ID." });
+
+                return Ok(new { message = "Medicamento eliminado correctamente", id });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { error = ex.Message });
+            }
+        }
     }
 }
