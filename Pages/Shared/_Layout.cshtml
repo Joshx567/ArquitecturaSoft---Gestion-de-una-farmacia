@@ -1,6 +1,5 @@
-﻿@using Microsoft.AspNetCore.Http
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,23 +17,10 @@
         <nav>
             <a asp-page="/Index">Home</a>
             <a asp-page="/Privacy">Privacy</a>
-
-            @{
-                var usuario = Context.Session.GetString("Usuario");
-            }
-
-            @if (usuario != null)
-            {
-                <a asp-page="/Medicamentos/Index">Medicamentos</a>
-                <a asp-page="/Clientes/Index">Clientes</a>
-                <a asp-page="/Bioquimicos/Index">Bioquímicos</a>
-                <a asp-page="/Reportes/Index">Reportes</a>
-                <a asp-page="/Auth/Logout">Cerrar Sesión</a>
-            }
-            else
-            {
-                <a asp-page="/Auth/Login">Login</a>
-            }
+            <a asp-page="/Medicamentos/Index">Medicamentos</a>
+            <a asp-page="/Clientes/Index">Clientes</a>
+            <a asp-page="/Bioquimicos/Index">Bioquímicos</a>
+            <a asp-page="/Reportes/Index">Reportes</a>
         </nav>
     </header>
 
