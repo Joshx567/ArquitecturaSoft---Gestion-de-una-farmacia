@@ -20,13 +20,15 @@
             <a asp-page="/Medicamentos/Index">Medicamentos</a>
             <a asp-page="/Clientes/Index">Clientes</a>
             <a asp-page="/Bioquimicos/Index">Bioquímicos</a>
-            <a asp-page="/Reportes/Index">Reportes</a>
+            
+            @*<a asp-page="/Reportes/Index">Reportes</a>*@    
+        
         </nav>
     </header>
 
-    <div class="container">
+    
         @RenderBody()
-    </div>
+    
 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
