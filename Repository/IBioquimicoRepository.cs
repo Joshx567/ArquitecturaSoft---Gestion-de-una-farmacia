@@ -6,7 +6,6 @@ namespace ProyectoArqSoft.Repository
     {
         Task<int> CrearAsync(Bioquimico bioquimico);
         Task<List<Bioquimico>> ListarAsync();
-
         Task<bool> ExisteCiAsync(string ci);
     }
 }

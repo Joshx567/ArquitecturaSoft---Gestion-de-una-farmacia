@@ -7,6 +7,7 @@ namespace ProyectoArqSoft.Pages.Bioquimicos
 {
     public class CreateModel : PageModel
     {
+        
         private readonly IBioquimicoService _service;
 
         public CreateModel(IBioquimicoService service)

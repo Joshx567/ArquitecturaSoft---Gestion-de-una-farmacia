@@ -38,7 +38,6 @@ namespace ProyectoArqSoft.Repository
             await conn.OpenAsync();
 
             await using var cmd = new NpgsqlCommand(sql, conn);
-
             cmd.Parameters.AddWithValue("@nombres", b.nombres);
             cmd.Parameters.AddWithValue("@apellidos", b.apellidos);
             cmd.Parameters.AddWithValue("@ci", b.ci);

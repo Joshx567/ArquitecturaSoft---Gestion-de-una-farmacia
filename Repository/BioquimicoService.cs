@@ -15,7 +15,6 @@ namespace ProyectoArqSoft.Service
 
         public async Task<(bool ok, string? mensaje)> CrearAsync(Bioquimico b)
         {
-            // AC2: obligatorios
             if (string.IsNullOrWhiteSpace(b.nombres) ||
                 string.IsNullOrWhiteSpace(b.apellidos) ||
                 string.IsNullOrWhiteSpace(b.ci) ||
@@ -24,21 +23,18 @@ namespace ProyectoArqSoft.Service
                 return (false, "Complete los campos obligatorios");
             }
 
-            // AC4: teléfono válido (7 a 10 dígitos)
             var tel = b.telefono.Trim();
             if (!Regex.IsMatch(tel, @"^\d{7,10}$"))
             {
                 return (false, "Teléfono inválido");
             }
 
-            // AC3: CI duplicado
             var ci = b.ci.Trim();
             if (await _repo.ExisteCiAsync(ci))
             {
                 return (false, "Bioquímico ya registrado");
             }
 
-            // Normalización
             b.nombres = b.nombres.Trim();
             b.apellidos = b.apellidos.Trim();
             b.ci = ci;
