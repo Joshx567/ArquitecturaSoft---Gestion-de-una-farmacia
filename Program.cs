@@ -16,6 +16,8 @@ builder.Services.AddSingleton<DbConnectionFactory>();
 builder.Services.AddScoped<IMedicamentoRepository, MedicamentoRepository>();
 builder.Services.AddScoped<IMedicamentoService, MedicamentoService>();
 
+builder.Services.AddScoped<IBioquimicoService, BioquimicoService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -42,5 +44,7 @@ app.MapControllers();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+
 
 app.Run();
